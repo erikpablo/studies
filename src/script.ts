@@ -1,12 +1,17 @@
-let number1 = document.querySelector(".number1") as HTMLInputElement;
-let number2 = document.querySelector(".number2") as HTMLInputElement;
-let button = document.querySelector(".sum");
-let result = document.querySelector(".result");
+// let number1 = document.querySelector(".number1") as HTMLInputElement;
+// let number2 = document.querySelector(".number2") as HTMLInputElement;
+// let button = document.querySelector(".sum");
+// let result = document.querySelector(".result");
 
-function calculation(n1: number, n2: number) {
-    return n1 + n2;
-};
+// function calculation(n1: number, n2: number) {
+//     return n1 + n2;
+// };
 
-button.addEventListener('click', () => {
-    result.innerHTML = calculation(+number1.value, +number2.value).toString();
-});
+// button.addEventListener('click', () => {
+//     result.innerHTML = calculation(+number1.value, +number2.value).toString();
+// });
+
+let name1: string = "Erik Pablo"
+let age: number = 21;
+
+console.log(name1, age)
