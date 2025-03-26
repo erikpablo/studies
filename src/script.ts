@@ -1,17 +1,8 @@
-// let number1 = document.querySelector(".number1") as HTMLInputElement;
-// let number2 = document.querySelector(".number2") as HTMLInputElement;
-// let button = document.querySelector(".sum");
-// let result = document.querySelector(".result");
+// Usando types nos parâmetros de uma função
 
-// function calculation(n1: number, n2: number) {
-//     return n1 + n2;
-// };
+function firstLetterUpperCase(name: string) {
+    let firstLetter = name.charAt(0).toUpperCase()
+    return firstLetter+name.substring(1)
+}
 
-// button.addEventListener('click', () => {
-//     result.innerHTML = calculation(+number1.value, +number2.value).toString();
-// });
-
-let name1: string = "Erik Pablo"
-let age: number = 21;
-
-console.log(name1, age)
+firstLetterUpperCase('erik')
