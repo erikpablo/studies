@@ -1,8 +1,12 @@
-// Usando types nos parâmetros de uma função
+//Contextual Typing em funções anônimas
 
-function firstLetterUpperCase(name: string) {
-    let firstLetter = name.charAt(0).toUpperCase()
-    return firstLetter+name.substring(1)
-}
+let names = ['erik', 'Max', 'alex', 90]
 
-firstLetterUpperCase('erik')
+
+names.forEach((name) => {
+    if(typeof name === 'string') {
+        console.log(name.toUpperCase())
+    } else {
+        console.log(name)
+    }
+})
