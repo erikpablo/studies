@@ -1,12 +1,12 @@
-//Contextual Typing em funções anônimas
+//Types em Objetos
 
-let names = ['erik', 'Max', 'alex', 90]
+function resumo(usuario: {name: string, age: number}) {
+    return `Olá ${usuario.name}, tudo bem? Você tem ${usuario.age} anos`;
+}
 
+let u = {
+    name: 'Erik',
+    age: 21,
+};
 
-names.forEach((name) => {
-    if(typeof name === 'string') {
-        console.log(name.toUpperCase())
-    } else {
-        console.log(name)
-    }
-})
+resumo(u);
