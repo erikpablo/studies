@@ -1,12 +1,15 @@
-//Union Types (múltiplos types)
+//Type e Interface: Como usar e diferenças
 
-function ageShow(age: string | number) {
-    if(typeof age == 'string') {
-        console.log(age.toUpperCase());
-    } else {
-        console.log(age);
-    }
+type User = {
+    name: string, 
+    age: number
 }
 
-ageShow(90);
-ageShow("90");
+function data(usuario: User) {
+    return `Olá ${usuario.name}, você tem ${usuario.age} anos`;
+}
+
+data({
+    name: "Erik",
+    age: 21,
+})
