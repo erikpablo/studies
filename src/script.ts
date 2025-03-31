@@ -1,5 +1,12 @@
 //Union Types (múltiplos types)
 
-let age: string | number = 90;
+function ageShow(age: string | number) {
+    if(typeof age == 'string') {
+        console.log(age.toUpperCase());
+    } else {
+        console.log(age);
+    }
+}
 
-age = document.getElementById('age').innerHTML;
+ageShow(90);
+ageShow("90");
