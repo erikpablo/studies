@@ -1,4 +1,4 @@
-//Types em Objetos
+//Propriedades Opcionais
 
 function resumo(usuario: {name: string, age?: number}) {
     if(usuario.age == undefined) {
