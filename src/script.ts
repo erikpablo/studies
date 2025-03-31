@@ -1,15 +1,5 @@
-//Type e Interface: Como usar e diferenças
+//Type Assertions
 
-type User = {
-    name: string, 
-    age: number
-}
+let ageField = document.querySelector('idade') as HTMLInputElement;
 
-function data(usuario: User) {
-    return `Olá ${usuario.name}, você tem ${usuario.age} anos`;
-}
-
-data({
-    name: "Erik",
-    age: 21,
-})
+console.log(ageField.value)
