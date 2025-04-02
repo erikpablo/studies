@@ -1,17 +1,5 @@
-//Type para funções
+//tsconfig.json
 
-type MathFunction = (n1: number, n2: number) => number;
-
-const somar: MathFunction = (n1, n2) => {
-    return console.log(n1 + n2);
+function hello(name: string): string {
+    return `Olá ${name}, tudo bem?`
 }
-const subt: MathFunction = (n1, n2) => {
-    return console.log(n1 - n2);
-}
-const mult: MathFunction = (n1, n2) => {
-    return console.log(n1 * n2);
-}
-const div: MathFunction = (n1, n2) => {
-    return console.log(n1 / n2);
-}
-
